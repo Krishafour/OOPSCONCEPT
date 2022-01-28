@@ -1,6 +1,11 @@
 abstract class actor{
     payment:number;
     role:string;
+    constructor()
+    {
+        this.payment=0;
+        this.role='null';
+    }
 
     abstract acting(): void;
 }
@@ -18,6 +23,13 @@ class Spy implements Hero, Enemy{
     role:string;
     heroId:number;
     enemyId:number;
+    constructor()
+    {
+        this.payment=1;
+        this.role='null';
+        this.heroId=0;
+        this.enemyId=0;
+    }
 
     acting(): void {
         this.payment-=1;
