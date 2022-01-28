@@ -2,7 +2,11 @@
 class police{
     payment:number;
     case:string;
-
+constructor()
+{
+    this.payment=0;
+    this.case='null';
+}
     attack(){
         console.log("I'm attacking...");
     }
@@ -17,6 +21,7 @@ class police{
 }
 class constable extends police{
     bullet:number=105;
+    
     attack(){
         super.attack();
         console.log("I also approaching a theif ");
