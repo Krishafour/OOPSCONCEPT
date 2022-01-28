@@ -2,6 +2,12 @@ class employee1{
     id:number
     name: string;
     isIncompany: boolean;
+    constructor()
+    {
+        this.id=0;
+        this.name='null';
+        this.isIncompany=true;
+    }
     greetings(){
         console.log(`Hello, my name is ${this.name},Id is ${this.id} Work in company is ${this.isIncompany}`);
     }
