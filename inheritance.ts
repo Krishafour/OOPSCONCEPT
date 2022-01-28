@@ -1,5 +1,9 @@
 class animal{
     health:number;
+    constructor()
+    {
+        this.health=0;
+    }
     eat(){
         console.log("I'm eating..");
     }
